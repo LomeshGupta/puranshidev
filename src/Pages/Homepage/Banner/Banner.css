@@ -59,17 +59,42 @@
     width: 100%;
   }
 
+  .image-container1 {
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-20%);
+    z-index: -1;
+    img {
+      margin: 2%;
+    }
+  }
+
   .image-container {
     overflow: hidden;
     transform: translateX(20%);
     z-index: -1;
-    .about {
-      margin: 2%;
-      margin-top: 10%;
-      width: 50%;
+    h1 {
+      font-size: 350%;
+      font-weight: 800;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    p {
+      font-size: 150%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  .about {
+    margin: 2%;
+    margin-top: 7%;
+    width: 50%;
+    padding: 5%;
+    .cont {
+        padding: 2%;
       h1 {
+        color: #04044a;
         font-size: 350%;
-        font-weight: 800;
+        font-weight: 500;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
       p {
@@ -112,6 +137,25 @@
         margin: 4%;
         padding: 10%;
       }
+    }
+
+    .image-container1 {
+        transform: translateX(0);
+        flex-direction: column;
+        img{
+            margin: 0;
+        }
+    }
+    .about{
+        width: 80%;
+        .cont{
+            h1{
+                font-size: 250%;
+            }
+            p{
+                font-size: 120%;
+            }
+        }
     }
   }
 }
