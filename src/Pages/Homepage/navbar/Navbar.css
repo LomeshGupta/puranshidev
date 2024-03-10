@@ -22,7 +22,7 @@
   }
 
   .overlay.hidden {
-    transform: translateX(100%); /* Move the overlay to the right */
+    transform: translateX(100%);
   }
 
   .center-text {
@@ -33,7 +33,7 @@
   }
 
   .company-name {
-    font-size: 200%;
+    font-size: 250%;
     margin: 2%;
     font-weight: 800;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -178,6 +178,7 @@
     }
 
     .company-name {
+      font-size: 200%;
       /* display: none; */
     }
     .menu-item {

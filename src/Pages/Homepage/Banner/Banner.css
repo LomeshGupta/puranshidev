@@ -61,12 +61,26 @@
 
   .image-container {
     overflow: hidden;
+    transform: translateX(20%);
     z-index: -1;
+    .about {
+      margin: 2%;
+      margin-top: 10%;
+      width: 50%;
+      h1 {
+        font-size: 350%;
+        font-weight: 800;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      p {
+        font-size: 150%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    }
   }
 
   .image-container img {
     height: auto;
-    transform: translateX(20%);
     transition: transform 0.3s ease;
   }
 
@@ -81,15 +95,23 @@
       margin-bottom: 15%;
     }
     .image-container {
-      height: 400px;
+      height: 100%;
       img {
         object-fit: cover;
         height: 100%;
       }
     }
 
-    .image-container img {
-      transform: translateX(-280px);
+    .image-container {
+      transform: translateX(0);
+      img {
+        transform: translateX(-35%);
+      }
+      .about {
+        width: 70%;
+        margin: 4%;
+        padding: 10%;
+      }
     }
   }
 }
