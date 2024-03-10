@@ -1,12 +1,13 @@
-// Navbar.js
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaGripLines } from "react-icons/fa";
-import "./Navbar.css";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showWelcomePage, setShowWelcomePage] = useState(true);
+  const [isNavbarFixed, setNavbarFixed] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -16,8 +17,6 @@ const Navbar = () => {
     setMenuOpen(false);
   };
 
-  const [showWelcomePage, setShowWelcomePage] = useState(true);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowWelcomePage(false);
@@ -26,8 +25,21 @@ const Navbar = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setNavbarFixed(scrollPosition > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isNavbarFixed ? "fixed" : ""}`}>
       {showWelcomePage ? (
         <div className="overlay">
           <div className="center-text">
@@ -57,7 +69,6 @@ const Navbar = () => {
             <div className="menu-item">Home</div>
             <div className="menu-item">About</div>
             <div className="menu-item">Services</div>
-            {/* Add more menu items as needed */}
           </div>
         </div>
       )}
