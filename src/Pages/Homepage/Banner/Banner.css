@@ -86,9 +86,10 @@
 
   .about {
     margin: 2%;
-    margin-top: 7%;
+    margin-top: 5%;
+    margin-left: 0;
     width: 50%;
-    padding: 5%;
+    padding: 2%;
     .cont {
         padding: 2%;
       h1 {
