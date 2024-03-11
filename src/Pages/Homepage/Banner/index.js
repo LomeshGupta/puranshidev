@@ -18,9 +18,16 @@ const Banner = () => {
         <div className="about">
           <h1>About Us</h1>
           <p>
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system, and expound the.
+            At Puranshi, we believe in the power of execution to scale & grow
+            our clients’ business. We are a strategy focused Marketing Firm
+            working with all major business categories like FMCG, Electronics &
+            Consumer Durables, E-commerce, Banking and Telecom. Our experienced
+            strategists have lead marketing & growth functions at leading Global
+            brands. We specialize in creating Integrated Marketing Campaigns
+            with heavy operational requirements supported by one of the
+            strongest execution networks across geographies. Engaging with
+            Puranshi ensures reliability & convenience through single point
+            campaign management.
           </p>
         </div>
       </div>
@@ -30,22 +37,29 @@ const Banner = () => {
           <div className="cont">
             <h1>Who are we?</h1>
             <p>
-              But I must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain was bor.
+              strategy-focused Marketing Firm, leverages the power of execution
+              to elevate client businesses. Specializing in Integrated Marketing
+              Campaigns, we bring operational excellence and global expertise,
+              offering reliability and convenience through seamless campaign
+              management.
             </p>
           </div>
           <div className="cont">
-            <h1>Who are we?</h1>
+            <h1>Our VIsion</h1>
             <p>
-              But I must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain was bor.
+              We envisions empowering businesses worldwide through strategic
+              marketing excellence. Our goal is to be the catalyst for sustained
+              growth, fostering innovation, and leaving a lasting positive
+              impact on diverse industries.
             </p>
           </div>
           <div className="cont">
-            <h1>Who are we?</h1>
+            <h1>Our Mission</h1>
             <p>
-              But I must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain was bor.
+              our mission is to drive client success by delivering unparalleled
+              marketing strategies and integrated campaigns. We strive to exceed
+              expectations, cultivate innovation, and build lasting partnerships
+              for sustainable growth across diverse global industries.
             </p>
           </div>
         </div>

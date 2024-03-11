@@ -50,11 +50,15 @@ const Navbar = () => {
         </div>
       ) : (
         <div className="overlay hidden">
-          <div className="center-text">puranshi</div>
+          <div className="center-text">
+            <h1 className="company-name">
+              Puranshi<span>.</span>
+            </h1>
+          </div>
         </div>
       )}
       <h1 className="company-name">
-        Puranshi<span>.</span>
+        Puranshi Events<span>.</span>
       </h1>
       <div className="icon" onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaGripLines />}
