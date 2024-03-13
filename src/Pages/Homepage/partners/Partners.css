@@ -1,0 +1,47 @@
+.partners {
+  .company-carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .company-slides {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .company-row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+  }
+
+  .headline {
+    margin-top: 5%;
+    font-size: 40px;
+    padding: 2%;
+    width: 90%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .company-slide {
+    margin: 2%;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.7;
+  }
+
+  .company-slide:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  .company-slide:last-child {
+    margin-right: 0;
+  }
+
+  .company-slide img {
+    width: 100px; /* Adjust logo size as needed */
+    height: auto;
+  }
+}
