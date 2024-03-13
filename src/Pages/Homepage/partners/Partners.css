@@ -44,4 +44,9 @@
     width: 100px; /* Adjust logo size as needed */
     height: auto;
   }
+  @media screen and (max-width: 768px) {
+      .company-slide{
+        margin: 3%;
+      }
+  }
 }
