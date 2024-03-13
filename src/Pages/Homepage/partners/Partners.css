@@ -2,6 +2,7 @@
   .company-carousel {
     overflow: hidden;
     width: 100%;
+    margin-bottom: 7%;
   }
 
   .company-slides {
@@ -47,6 +48,9 @@
   @media screen and (max-width: 768px) {
       .company-slide{
         margin: 3%;
+      }
+      .company-carousel {
+        margin-bottom: 20%;
       }
   }
 }
