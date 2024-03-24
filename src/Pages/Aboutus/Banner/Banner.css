@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* margin: 2%; */
+  overflow: hidden;
+  padding-top: 6%;
+  /* height: 500rem; */
+
+  .headline {
+    margin-top: 5%;
+    font-size: 70px;
+    padding: 2%;
+    width: 90%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .menu-container {
+    padding: 1%;
+    margin-bottom: 6%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    /* z-index: -1; */
+  }
+
+  .menu-items {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .menu-items::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(
+      to right,
+      #ff0000,
+      #ff8000,
+      #ffff00,
+      #80ff00,
+      #00ff80,
+      #00ffff,
+      #0080ff,
+      #0000ff,
+      #8000ff,
+      #ff00ff,
+      #ff0080
+    );
+    transition: width 0.3s ease-in-out;
+  }
+
+  .menu-items:hover::after {
+    width: 100%;
+  }
+
+  .image-container1 {
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-20%);
+    z-index: -1;
+    img {
+      margin: 2%;
+    }
+  }
+
+  .image-container {
+    overflow: hidden;
+    transform: translateX(20%);
+    z-index: -1;
+    h1 {
+      font-size: 350%;
+      font-weight: 800;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    p {
+      font-size: 150%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  .about {
+    margin: 2%;
+    margin-top: 5%;
+    margin-left: 0;
+    width: 60%;
+    padding: 2%;
+    .cont {
+        padding: 2%;
+      h1 {
+        color: #04044a;
+        font-size: 350%;
+        font-weight: 500;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      p {
+        font-size: 150%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    }
+  }
+
+  .image-container img {
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  @media (max-width: 868px) {
+    .headline {
+      margin-top: 13%;
+      padding: 8%;
+      font-size: 50px;
+    }
+    .menu-item {
+      font-size: 20px;
+      margin-bottom: 15%;
+    }
+    .image-container {
+      height: 100%;
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+
+    .image-container {
+      transform: translateX(0);
+      img {
+        transform: translateX(-35%);
+      }
+      .about {
+        width: 70%;
+        margin: 4%;
+        padding: 10%;
+      }
+    }
+
+    .image-container1 {
+        transform: translateX(0);
+        flex-direction: column;
+        img{
+            margin: 0;
+        }
+    }
+    .about{
+        width: 80%;
+        margin-left: 7%;
+        .cont{
+            h1{
+                font-size: 250%;
+            }
+            p{
+                font-size: 120%;
+            }
+        }
+    }
+  }
+}
+
+@media (max-width: 868px) {
+    .container
+    {
+        padding-top: 16%;
+    }
+}

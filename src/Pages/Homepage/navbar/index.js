@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { FaGripLines } from "react-icons/fa";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,8 +59,11 @@ const Navbar = () => {
         </div>
       )}
       <h1 className="company-name">
-        Puranshi Events<span>.</span>
+        <Link style={{ textDecoration: "none", color:"Black" }} to="/">
+          Puranshi Events<span>.</span>
+        </Link>
       </h1>
+
       <div className="icon" onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaGripLines />}
       </div>
@@ -70,8 +74,16 @@ const Navbar = () => {
             <div className="close-icon" onClick={closeMenu}>
               <FaTimes />
             </div>
-            <div className="menu-item">Home</div>
-            <div className="menu-item">About</div>
+            <Link style={{ textDecoration: "none", color: "white" }} to="/">
+              <div className="menu-item">Home</div>
+            </Link>
+            <Link
+              to="/About-us"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <div className="menu-item">About</div>
+            </Link>
+
             <div className="menu-item">Services</div>
           </div>
         </div>
